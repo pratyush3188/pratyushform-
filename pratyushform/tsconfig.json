@@ -1,0 +1,50 @@
+// {
+//   "compilerOptions": {
+//     "target": "es5",
+//     "lib": ["DOM","DOM.Iterable","ESNext"],
+//     "allowJs": true,
+//     "skipLibCheck": true,
+//     "esModuleInterop": true,
+//     "allowSyntheticDefaultImports": true,
+//     "strict": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "noFallthroughCasesInSwitch": true,
+//     "module": "esnext",
+//     "isolatedModules": true,
+//     "noEmit": true,
+//     "jsx": "react-jsx",
+//     "outDir": "./types",
+// "declaration": true,
+// "emitDeclarationOnly": true
+
+//   },
+//   "include": ["src"]
+// }
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+
+    "jsx": "react-jsx",
+
+    "strict": true,
+    "skipLibCheck": true,
+
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "allowJs": false,
+    "isolatedModules": true,
+
+    "declaration": true,
+    "noEmit": false,     // ⬅ IMPORTANT
+    "outDir": "./dist",  // ⬅ OK because Rollup also outputs to dist
+
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "types": ["react", "react-dom"]
+  },
+  "include": ["src"]
+}
